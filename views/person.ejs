@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <%if(ID % 2 == 0){%>
+            <h1>NUMERO PAR</h1>
+            <ul><!--Abre una lista desordenada -->        
+                <%for(let i = 0; i < (ID * 2); i++){%><!--Ciclo For que se repita de 1 ID*2-->  
+                    <li>ES PAR</li> <!--Imprime "Es par", como elemento de la lista ordenada-->
+                <%}%>
+            </ul><!--Cierra la etiqueta para la lista desordenada...-->
+                <%}else{%><!--En caso de no ser Par...-->
+            <h1>NUMERO IMPAR</h1>
+            <ul> <!--Abre una lista desordenada -->
+                <%for(let i = 0; i < ID; i++){%> <!--Ciclo For que va de 1 a ID para imprimir ID veces el mensaje-->
+                    <li>ES IMPAR</li> <!--Imprime "Es impar", como elemento de la lista ordenada-->
+                <%}%>
+            </ul><!--Cierra la etiqueta para la lista desordenada...-->
+                <%}%>
+    </body>
+</html>
